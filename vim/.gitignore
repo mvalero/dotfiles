@@ -2,4 +2,4 @@
 backups/*
 !backups/.gitkeep
 # Ignore bundle folder
-bundle/*/doc
+bundle/

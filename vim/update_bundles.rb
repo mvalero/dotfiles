@@ -24,8 +24,16 @@ end
 $git_bundles = [
   "git://github.com/scrooloose/nerdtree.git",
   "git://github.com/vim-ruby/vim-ruby.git",
+  "git://github.com/tpope/vim-rails.git",
   "git://github.com/tsaleh/vim-supertab.git",
   "git://github.com/skammer/vim-css-color.git",
+  "git://github.com/tpope/vim-haml.git",
+  "git://github.com/tomtom/tcomment_vim.git",
+  "git://github.com/vim-scripts/IndexedSearch.git",   #Index of the current match of a search  
+  #"git://github.com/Shougo/neocomplcache.git",
+  "git://github.com/tpope/vim-fugitive.git",
+  "git://github.com/tpope/vim-git.git",
+  #"git://github.com/wincent/Command-T.git",
 ]
 
 =begin

@@ -1,0 +1,5 @@
+# Keep the actual backups folder, but not its contents
+backups/*
+!backups/.gitkeep
+# Ignore bundle folder
+bundle/*/doc

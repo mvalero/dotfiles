@@ -1,0 +1,26 @@
+# NOTE: This is the global gitignore, not the gitignore for the dotfiles
+# repository!
+syntax: glob
+.DS_Store
+Thumbs.db
+
+# Vim swap files
+*.sw[po]
+# Vim persistent undo files
+*.un~
+# Created by _rake autocomplete function
+.rake_tasks
+
+# python byte-compiled files
+*.py[co]
+
+# Rubinius-compiled files
+*.rbc
+
+# From `bundle install --binstubs=bundler_binstubs`
+bundler_binstubs
+.bundle
+
+# ctags file
+tags
+

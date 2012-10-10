@@ -18,9 +18,14 @@ $git_bundles = [
   "git://github.com/tpope/vim-git.git",
   "git://github.com/tpope/vim-markdown.git",
   "git://github.com/mattn/zencoding-vim.git", 
+  "git://github.com/kchmck/vim-coffee-script.git",
+  "git://github.com/altercation/vim-colors-solarized.git",
+  "git://github.com/kien/ctrlp.vim.git",
+  #"git://github.com/wincent/Command-T.git",  
+  #"git://github.com/garbas/vim-snipmate.git",
+  #"git://github.com/rcyrus/snipmate-snippets-rubymotion.git",
   #"git://github.com/Shougo/neocomplcache.git",  
   #"git://github.com/bingaman/vim-sparkup.git",
-  #"git://github.com/wincent/Command-T.git",
 ]
 
 # Where we put zip files from vim.org/scripts/

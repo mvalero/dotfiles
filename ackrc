@@ -1,0 +1,7 @@
+--type-set=coffee=.coffee
+--type-set=sass=.sass
+--type-set=scss=.scss
+--type-set=handlebars=.hbs
+--type-set=haml=.haml
+--type-set=prawn=.prawn
+--type-set=jbuilder=.jbuilder

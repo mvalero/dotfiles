@@ -5,28 +5,32 @@
 require 'fileutils'
 require 'open-uri'
 
-$git_bundles = [
-  "git://github.com/scrooloose/nerdtree.git",
-  "git://github.com/vim-ruby/vim-ruby.git",
-  "git://github.com/tpope/vim-rails.git",
-  "git://github.com/tsaleh/vim-supertab.git",
-  "git://github.com/skammer/vim-css-color.git",
-  "git://github.com/tpope/vim-haml.git",
-  "git://github.com/tomtom/tcomment_vim.git",
-  "git://github.com/vim-scripts/IndexedSearch.git",   #Index of the current match of a search  
-  "git://github.com/tpope/vim-fugitive.git",
-  "git://github.com/tpope/vim-git.git",
-  "git://github.com/tpope/vim-markdown.git",
-  "git://github.com/mattn/zencoding-vim.git", 
-  "git://github.com/kchmck/vim-coffee-script.git",
-  "git://github.com/altercation/vim-colors-solarized.git",
-  "git://github.com/kien/ctrlp.vim.git",
-  #"git://github.com/wincent/Command-T.git",  
-  #"git://github.com/garbas/vim-snipmate.git",
-  #"git://github.com/rcyrus/snipmate-snippets-rubymotion.git",
-  #"git://github.com/Shougo/neocomplcache.git",  
-  #"git://github.com/bingaman/vim-sparkup.git",
-]
+$git_bundles = %w{
+  git://github.com/scrooloose/nerdtree.git
+  git://github.com/vim-ruby/vim-ruby.git
+  git://github.com/tpope/vim-rails.git
+  git://github.com/tsaleh/vim-supertab.git
+  git://github.com/tomtom/tcomment_vim.git
+  git://github.com/vim-scripts/IndexedSearch.git
+  git://github.com/tpope/vim-fugitive.git
+  git://github.com/tpope/vim-git.git
+  git://github.com/mattn/zencoding-vim.git
+  git://github.com/altercation/vim-colors-solarized.git
+  git://github.com/kien/ctrlp.vim.git
+  git://github.com/tpope/vim-surround.git
+  git://github.com/tsaleh/vim-matchit.git
+  git://github.com/godlygeek/tabular.git
+  git://github.com/mileszs/ack.vim.git
+  git://github.com/vim-scripts/FuzzyFinder.git
+  git://github.com/vim-scripts/L9.git
+  git://github.com/skammer/vim-css-color.git
+  git://github.com/kchmck/vim-coffee-script.git
+  git://github.com/tpope/vim-haml.git
+  git://github.com/nono/vim-handlebars.git
+  git://github.com/tpope/vim-markdown.git
+  git://github.com/pangloss/vim-javascript.git
+  git://github.com/fholgado/minibufexpl.vim.git
+}
 
 # Where we put zip files from vim.org/scripts/
 TEMP_ZIP_NAME = 'temp.zip'
@@ -43,67 +47,6 @@ def update_pathogen
     end
   end
 end
-
-=begin
-git_bundles = %w{
-git://github.com/astashov/vim-ruby-debugger.git
-git://github.com/godlygeek/tabular.git
-git://github.com/pangloss/vim-javascript.git
-git://github.com/scrooloose/nerdtree.git
-git://github.com/timcharper/textile.vim.git
-git://github.com/tomtom/tcomment_vim.git
-git://github.com/tpope/vim-cucumber.git
-git://github.com/tpope/vim-endwise.git
-git://github.com/tpope/vim-fugitive.git
-git://github.com/tpope/vim-git.git
-git://github.com/tpope/vim-haml.git
-git://github.com/tpope/vim-markdown.git
-git://github.com/tpope/vim-rails.git
-git://github.com/tpope/vim-repeat.git
-git://github.com/tpope/vim-surround.git
-git://github.com/tpope/vim-vividchalk.git
-git://github.com/tsaleh/vim-matchit.git
-git://github.com/tsaleh/vim-shoulda.git
-git://github.com/tsaleh/vim-tmux.git
-git://github.com/vim-ruby/vim-ruby.git
-git://github.com/vim-scripts/Gist.vim.git
-git://github.com/vim-scripts/IndexedSearch.git
-git://github.com/vim-scripts/jQuery.git
-git://github.com/kana/vim-textobj-user.git
-git://github.com/nelstrom/vim-textobj-rubyblock.git
-git://github.com/jgdavey/vim-blockle.git
-git://github.com/Shougo/neocomplcache.git
-git://github.com/sickill/vim-pasta.git
-git://github.com/ecomba/vim-ruby-refactoring.git
-}
-=end
-
-=begin
-$git_bundles = [
-  "git://github.com/scrooloose/nerdtree.git",
-  #"git://github.com/astashov/vim-ruby-debugger.git",
-  #"git://github.com/godlygeek/tabular.git",
-  #"git://github.com/hallison/vim-rdoc.git",
-  "git://github.com/pangloss/vim-javascript.git",
-  #"git://github.com/timcharper/textile.vim.git",
-  #"git://github.com/tpope/vim-repeat.git",
-  #"git://github.com/tpope/vim-surround.git",
-  #"git://github.com/tpope/vim-vividchalk.git",
-  "git://github.com/tsaleh/vim-matchit.git",
-  "git://github.com/tsaleh/vim-supertab.git", # tab completion
-  #"git://github.com/tsaleh/vim-tcomment.git",
-  #"git://github.com/msanders/snipmate.vim.git",
-  "git://github.com/kchmck/vim-coffee-script.git",
-  "git://github.com/tpope/vim-cucumber.git",
-  "git://github.com/tpope/vim-fugitive.git",
-  "git://github.com/tpope/vim-git.git",
-  "git://github.com/tpope/vim-haml.git",
-  "git://github.com/tpope/vim-markdown.git",
-  "git://github.com/tpope/vim-rails.git",
-  "git://github.com/tsaleh/vim-shoulda.git",
-  "git://github.com/vim-ruby/vim-ruby.git",
-]
-=end
 
 # [name, script_id, script type]
 # e.g. ["jquery",        "12276", "syntax"]
@@ -131,6 +74,50 @@ $vim_org_scripts = [
   #["pyflakes", 14288, "ftplugin", "zip"],
 ]
 
+=begin
+git_bundles = %w{
+git://github.com/wincent/Command-T.git
+git://github.com/garbas/vim-snipmate.git
+git://github.com/rcyrus/snipmate-snippets-rubymotion.git
+git://github.com/Shougo/neocomplcache.git
+git://github.com/bingaman/vim-sparkup.git
+git://github.com/astashov/vim-ruby-debugger.git
+git://github.com/pangloss/vim-javascript.git
+git://github.com/scrooloose/nerdtree.git
+git://github.com/timcharper/textile.vim.git
+git://github.com/tomtom/tcomment_vim.git
+git://github.com/tpope/vim-cucumber.git
+git://github.com/tpope/vim-endwise.git
+git://github.com/tpope/vim-fugitive.git
+git://github.com/tpope/vim-git.git
+git://github.com/tpope/vim-haml.git
+git://github.com/tpope/vim-markdown.git
+git://github.com/tpope/vim-repeat.git
+git://github.com/tpope/vim-surround.git
+git://github.com/tpope/vim-vividchalk.git
+git://github.com/tsaleh/vim-matchit.git
+git://github.com/tsaleh/vim-shoulda.git
+git://github.com/tsaleh/vim-tmux.git
+git://github.com/vim-ruby/vim-ruby.git
+git://github.com/vim-scripts/Gist.vim.git
+git://github.com/vim-scripts/IndexedSearch.git
+git://github.com/vim-scripts/jQuery.git
+git://github.com/kana/vim-textobj-user.git
+git://github.com/nelstrom/vim-textobj-rubyblock.git
+git://github.com/jgdavey/vim-blockle.git
+git://github.com/Shougo/neocomplcache.git
+git://github.com/sickill/vim-pasta.git
+git://github.com/ecomba/vim-ruby-refactoring.git
+}
+=end
+
+=begin
+$git_bundles = [
+  #"git://github.com/hallison/vim-rdoc.git",
+  #"git://github.com/tsaleh/vim-tcomment.git",
+  #"git://github.com/msanders/snipmate.vim.git",
+]
+=end
 
 def setup
   bundles_dir = File.join(File.dirname(__FILE__), "bundle")

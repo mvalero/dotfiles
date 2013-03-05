@@ -145,6 +145,8 @@ map <C-UP> :m -2 <CR>
 " complete line
 imap <C-L> <C-X><C-L>
 
+" switching tabs
+noremap <c-tab> :tabnext<cr> 
 
 " RagTag Mappings
 "</<C-X><C-O>
@@ -159,7 +161,7 @@ map <Leader>rv :Rview
 
 " fuzzy file finder
 nnoremap <leader>p :<C-u>FufFile **/<CR>
-
+nnoremap <leader>fb :<C-u>FufBuffer **/<CR>
 
 if has('gui_running')
   "set background=dark

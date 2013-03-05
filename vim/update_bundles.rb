@@ -28,8 +28,22 @@ $git_bundles = %w{
   git://github.com/tpope/vim-haml.git
   git://github.com/nono/vim-handlebars.git
   git://github.com/tpope/vim-markdown.git
+  git://github.com/briancollins/vim-jst.git
   git://github.com/pangloss/vim-javascript.git
-  git://github.com/fholgado/minibufexpl.vim.git
+  git://github.com/scottmcginness/vim-jquery.git
+  git://github.com/briancollins/vim-jst.git
+  git://github.com/tpope/vim-ragtag.git
+  git://github.com/othree/html5.vim.git
+  git://github.com/vim-scripts/simplefold.git
+  git://github.com/scrooloose/syntastic.git
+  git://github.com/tpope/vim-endwise.git
+  git://github.com/reinh/vim-makegreen.git
+  git://github.com/danro/rename.vim.git
+  git://github.com/airblade/vim-rooter.git
+  git://github.com/skwp/vim-rspec.git
+  git://github.com/vim-scripts/taglist.vim.git
+  git://github.com/vim-scripts/BufOnly.vim.git
+  git://github.com/vim-scripts/bufexplorer.zip.git
 }
 
 # Where we put zip files from vim.org/scripts/
@@ -52,9 +66,9 @@ end
 # e.g. ["jquery",        "12276", "syntax"]
 # puts script id 12276 in bundle/jquery/syntax/jquery.vim
 $vim_org_scripts = [
-  # http://www.vim.org/scripts/script.php?script_id=1682
-  # 7062: v070503
-  #["IndexedSearch", "7062",  "plugin"],
+  # http://www.vim.org/scripts/script.php?script_id=42
+  # 19481: v.7.3.5
+  # ["bufexplorer", "19481",  "plugin"],
   # http://www.vim.org/scripts/script.php?script_id=2423
   # 14204: v4.5
   #["gist",          "14204", "plugin"],
@@ -76,6 +90,7 @@ $vim_org_scripts = [
 
 =begin
 git_bundles = %w{
+git://github.com/fholgado/minibufexpl.vim.git
 git://github.com/wincent/Command-T.git
 git://github.com/garbas/vim-snipmate.git
 git://github.com/rcyrus/snipmate-snippets-rubymotion.git
@@ -87,7 +102,6 @@ git://github.com/scrooloose/nerdtree.git
 git://github.com/timcharper/textile.vim.git
 git://github.com/tomtom/tcomment_vim.git
 git://github.com/tpope/vim-cucumber.git
-git://github.com/tpope/vim-endwise.git
 git://github.com/tpope/vim-fugitive.git
 git://github.com/tpope/vim-git.git
 git://github.com/tpope/vim-haml.git
@@ -108,6 +122,8 @@ git://github.com/jgdavey/vim-blockle.git
 git://github.com/Shougo/neocomplcache.git
 git://github.com/sickill/vim-pasta.git
 git://github.com/ecomba/vim-ruby-refactoring.git
+git://github.com/int3/vim-taglist-plus.git
+git://github.com/tpope/vim-unimpaired.git
 }
 =end
 

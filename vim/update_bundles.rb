@@ -44,6 +44,7 @@ $git_bundles = %w{
   git://github.com/vim-scripts/taglist.vim.git
   git://github.com/vim-scripts/BufOnly.vim.git
   git://github.com/vim-scripts/bufexplorer.zip.git
+  git://github.com/maxbrunsfeld/vim-yankstack.git
 }
 
 # Where we put zip files from vim.org/scripts/

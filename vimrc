@@ -185,6 +185,7 @@ if has('gui_running')
   set guicursor+=sm:block-Cursor-blinkwait175-blinkoff150-blinkon17 
  
   if has("gui_macvim")
+      set macmeta
       macmenu &File.New\ Tab key=<nop>
   end
 

@@ -163,6 +163,8 @@ map <Leader>rv :Rview
 nnoremap <leader>p :<C-u>FufFile **/<CR>
 nnoremap <leader>fb :<C-u>FufBuffer **/<CR>
 
+colorscheme railscasts
+
 if has('gui_running')
   "set background=dark
   "colorscheme solarized

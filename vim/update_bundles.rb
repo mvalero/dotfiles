@@ -23,7 +23,7 @@ $git_bundles = %w{
   git://github.com/mileszs/ack.vim.git
   git://github.com/vim-scripts/FuzzyFinder.git
   git://github.com/vim-scripts/L9.git
-  git://github.com/skammer/vim-css-color.git
+  git://github.com/ap/vim-css-color.git
   git://github.com/kchmck/vim-coffee-script.git
   git://github.com/tpope/vim-haml.git
   git://github.com/nono/vim-handlebars.git

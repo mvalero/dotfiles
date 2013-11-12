@@ -33,13 +33,48 @@ plugins=(git bundler brew gem rails3 ruby)
 
 source $ZSH/oh-my-zsh.sh
 
+export EDITOR='mvim'
+
 # Customize to your needs...
-export PATH=/Users/mvalero/.rvm/gems/ruby-1.9.3-p194@lbsi/bin:/Users/mvalero/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/mvalero/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/mvalero/.rvm/bin:/usr/local/bin:./bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/mysql/bin
+export PATH=$PATH:/Users/mvalero/.rvm/gems/ruby-1.9.3-p194@lbsi/bin:/Users/mvalero/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/mvalero/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/mvalero/.rvm/bin:/usr/local/bin:./bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/mysql/bin
 export PATH="./bin:$PATH" 
-[[ -s "/Users/mvalero/.rvm/scripts/rvm" ]] && source "/Users/mvalero/.rvm/scripts/rvm"
 
 export PATH=/usr/local/bin:$PATH:/usr/local/mysql/bin
-export CC=/usr/bin/gcc-4.2
+export CC=/usr/local/Cellar/gcc46/4.6.4/bin/gcc-4.6
 export PATH=/usr/local/bin:$PATH
+
 alias tmux="TERM=screen-256color-bce tmux"
 [ -n "$TMUX" ] && export TERM=screen-256color
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+setopt auto_cd
+cdpath=($HOME/projects)
+
+#
+# # Customize to your needs...
+# 
+# # go to saved path if there is one
+# if [[ -f ~/.current_path~ ]]; then
+# cd `cat ~/.current_path~`
+# rm ~/.current_path~
+# fi
+# 
+# export PATH=/Developer/usr/bin:/Developer/usr/sbin:$PATH
+# export PATH=$PATH:/usr/local/bin:/usr/local/mysql/bin
+# export PATH=$PATH:/usr/local/share/npm/bin
+# export NODE_PATH=/usr/local/lib/node:$NODE_PATH
+# 
+# [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+# 
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
+# 
+# 
+# 
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# 
+# ### Added by the Heroku Toolbelt
+# export PATH="/usr/local/heroku/bin:$PATH"
+# 
+

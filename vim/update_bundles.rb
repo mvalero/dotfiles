@@ -47,6 +47,8 @@ $git_bundles = %w{
   git://github.com/maxbrunsfeld/vim-yankstack.git
   git://github.com/jgdavey/vim-railscasts.git
   git://github.com/ricardovaleriano/vim-github-theme.git
+  git://github.com/vim-scripts/summerfruit256.vim.git
+  git://github.com/bling/vim-airline.git
 }
 
 # Where we put zip files from vim.org/scripts/
@@ -69,6 +71,8 @@ end
 # e.g. ["jquery",        "12276", "syntax"]
 # puts script id 12276 in bundle/jquery/syntax/jquery.vim
 $vim_org_scripts = [
+  # http://www.vim.org/scripts/script.php?script_id=1492
+  ["pyte", "1492",  "plugin"],
   # http://www.vim.org/scripts/script.php?script_id=42
   # 19481: v.7.3.5
   # ["bufexplorer", "19481",  "plugin"],

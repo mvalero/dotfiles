@@ -36,6 +36,7 @@ syntax: glob
 ehthumbs.db
 #Icon?
 Thumbs.db
+.idea
 
 # Vim swap files
 *.sw[po]

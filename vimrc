@@ -89,8 +89,8 @@ map <leader><space> :noh<cr>
 set nowrap
 
 " Use the same symbols as TextMate for tabstops and EOLs
-set list
-set listchars=tab:▸\ ,eol:¬
+" set list
+" set listchars=tab:▸\ ,eol:¬
 
 " Color scheme (terminal)
 syntax on
@@ -123,7 +123,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 map <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Ack
-map <leader>a :Ack 
+map <leader>a :Ack
 
 " Yankring
 nnoremap <silent> <F3> :YRShow<cr>
@@ -146,7 +146,7 @@ map <C-UP> :m -2 <CR>
 imap <C-L> <C-X><C-L>
 
 " switching tabs
-noremap <c-tab> :tabnext<cr> 
+noremap <c-tab> :tabnext<cr>
 
 " RagTag Mappings
 "</<C-X><C-O>
@@ -155,22 +155,26 @@ imap <leader>, <C-X>-
 imap <leader>m <C-X>=
 
 " Rails commands
-map <Leader>rm :Rmodel 
-map <Leader>rc :Rcontroller 
-map <Leader>rv :Rview 
+map <Leader>rm :Rmodel
+map <Leader>rc :Rcontroller
+map <Leader>rv :Rview
 
 " fuzzy file finder
 nnoremap <leader>p :<C-u>FufFile **/<CR>
 nnoremap <leader>fb :<C-u>FufBuffer **/<CR>
 
 colorscheme railscasts
+set t_Co=256
 
 if has('gui_running')
-  "set background=dark
-  "colorscheme solarized
-  
-  colorscheme railscasts
-  set background=dark
+  colorscheme solarized
+  set background=light
+
+  " colorscheme railscasts
+  set guifont=Inconsolata:h13
+  set guifont=Monaco:h11
+  let g:airline_powerline_fonts = 1
+  set guifont=Sauce\ Code\ Powerline:h11
 
   set go-=T
   set go-=l
@@ -184,8 +188,8 @@ if has('gui_running')
   set guicursor+=o:hor50-Cursor
   set guicursor+=i-ci:ver25-Cursor
   set guicursor+=r-cr:hor20-Cursor
-  set guicursor+=sm:block-Cursor-blinkwait175-blinkoff150-blinkon17 
- 
+  set guicursor+=sm:block-Cursor-blinkwait175-blinkoff150-blinkon17
+
   if has("gui_macvim")
       set macmeta
       macmenu &File.New\ Tab key=<nop>
@@ -199,6 +203,4 @@ autocmd BufNewFile,BufRead *_spec.rb  compiler rspec
 au! BufRead,BufNewFile *.sass         setfiletype sass
 au! BufRead,BufNewFile *.jst          setfiletype html
 au! BufNewFile,BufRead *.prawn        setfiletype ruby
-
-
 

@@ -5,3 +5,24 @@
 --type-set=haml=.haml
 --type-set=prawn=.prawn
 --type-set=jbuilder=.jbuilder
+
+--ignore-file=ext:bak
+--ignore-file=ext:htc
+--ignore-file=ext:pdf
+--ignore-file=ext:sql
+
+--ignore-dir=coverage
+--ignore-dir=dragonfly
+--ignore-dir=javascripts/lib
+--ignore-dir=log
+--ignore-dir=spec
+--ignore-dir=test
+--ignore-dir=tmp
+--ignore-dir=public/system
+--ignore-dir=.sass-cache
+--ignore-dir=vendor
+
+# vi/vim swap files
+--ignore-file=match:/[._].*\.swp$/
+
+--color

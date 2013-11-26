@@ -36,7 +36,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='mvim'
 
 # Customize to your needs...
-export PATH=$PATH:/Users/mvalero/.rvm/gems/ruby-1.9.3-p194@lbsi/bin:/Users/mvalero/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/mvalero/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/mvalero/.rvm/bin:/usr/local/bin:./bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/mysql/bin
+export PATH=$PATH:$HOME/.rvm/gems/ruby-1.9.3-p194@lbsi/bin:$HOME/.rvm/gems/ruby-1.9.3-p194@global/bin:$HOME/.rvm/rubies/ruby-1.9.3-p194/bin:$HOME/.rvm/bin:/usr/local/bin:./bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/mysql/bin
 export PATH="./bin:$PATH" 
 
 export PATH=/usr/local/bin:$PATH:/usr/local/mysql/bin

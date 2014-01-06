@@ -49,6 +49,8 @@ $git_bundles = %w{
   git://github.com/ricardovaleriano/vim-github-theme.git
   git://github.com/vim-scripts/summerfruit256.vim.git
   git://github.com/bling/vim-airline.git
+  git://github.com/morhetz/gruvbox.git
+  git://github.com/tomasr/molokai.git
 }
 
 # Where we put zip files from vim.org/scripts/

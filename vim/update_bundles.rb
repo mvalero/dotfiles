@@ -14,7 +14,7 @@ $git_bundles = %w{
   git://github.com/vim-scripts/IndexedSearch.git
   git://github.com/tpope/vim-fugitive.git
   git://github.com/tpope/vim-git.git
-  git://github.com/mattn/zencoding-vim.git
+  git://github.com/mattn/emmet-vim.git
   git://github.com/altercation/vim-colors-solarized.git
   git://github.com/kien/ctrlp.vim.git
   git://github.com/tpope/vim-surround.git
@@ -52,6 +52,8 @@ $git_bundles = %w{
   git://github.com/morhetz/gruvbox.git
   git://github.com/tomasr/molokai.git
   git://github.com/noahfrederick/vim-hemisu.git
+  git://github.com/skwp/greplace.vim.git
+  git://github.com/tpope/vim-unimpaired.git
 }
 
 # Where we put zip files from vim.org/scripts/
@@ -133,7 +135,6 @@ git://github.com/Shougo/neocomplcache.git
 git://github.com/sickill/vim-pasta.git
 git://github.com/ecomba/vim-ruby-refactoring.git
 git://github.com/int3/vim-taglist-plus.git
-git://github.com/tpope/vim-unimpaired.git
 }
 =end
 

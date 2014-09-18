@@ -167,10 +167,10 @@ colorscheme railscasts
 set t_Co=256
 
 if has('gui_running')
-  colorscheme hemisu
+  colorscheme cobalt
 "   colorscheme molokai
 "   colorscheme solarized
-  set background=light
+  set background=dark
 "   set background=dark
 "   set transparency=5
 "   set guifont=Inconsolata:h13

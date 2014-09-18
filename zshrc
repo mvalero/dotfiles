@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="af-magic"
+ZSH_THEME="pygmalion"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -33,14 +33,15 @@ plugins=(git bundler brew gem rails ruby)
 
 source $ZSH/oh-my-zsh.sh
 
-export EDITOR='mvim'
+# export EDITOR='mvim'
 
 # Customize to your needs...
 export PATH=$PATH:$HOME/.rvm/gems/ruby-1.9.3-p194@lbsi/bin:$HOME/.rvm/gems/ruby-1.9.3-p194@global/bin:$HOME/.rvm/rubies/ruby-1.9.3-p194/bin:$HOME/.rvm/bin:/usr/local/bin:./bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/mysql/bin
 export PATH="./bin:$PATH" 
 
 export PATH=/usr/local/bin:$PATH:/usr/local/mysql/bin
-export CC=/usr/local/Cellar/gcc46/4.6.4/bin/gcc-4.6
+# export CC=/usr/bin/gcc
+# export CC=/usr/local/Cellar/gcc46/4.6.4/bin/gcc-4.6
 export PATH=/usr/local/bin:$PATH
 
 alias tmux="TERM=screen-256color-bce tmux"
@@ -52,6 +53,9 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 setopt auto_cd
 cdpath=($HOME/projects)
 
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+
+alias gitx='open -a GitX .'
 #
 # # Customize to your needs...
 # 

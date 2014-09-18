@@ -54,7 +54,9 @@ $git_bundles = %w{
   git://github.com/noahfrederick/vim-hemisu.git
   git://github.com/skwp/greplace.vim.git
   git://github.com/tpope/vim-unimpaired.git
+  git://github.com/dterei/VimCobaltColourScheme.git
 }
+# git://github.com/sfsekaran/cobalt.vim.git
 
 # Where we put zip files from vim.org/scripts/
 TEMP_ZIP_NAME = 'temp.zip'

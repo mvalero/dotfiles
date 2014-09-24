@@ -55,6 +55,7 @@ $git_bundles = %w{
   git://github.com/skwp/greplace.vim.git
   git://github.com/tpope/vim-unimpaired.git
   git://github.com/dterei/VimCobaltColourScheme.git
+  git://github.com/suxpert/vimcaps.git
 }
 # git://github.com/sfsekaran/cobalt.vim.git
 

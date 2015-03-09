@@ -1,9 +1,64 @@
-filetype off
-call pathogen#infect('bundle/{}')
-call pathogen#helptags()
-filetype plugin indent on
-
 set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Plugins
+Plugin 'git://github.com/scrooloose/nerdtree.git'
+Plugin 'git://github.com/vim-ruby/vim-ruby.git'
+Plugin 'git://github.com/tpope/vim-rails.git'
+Plugin 'git://github.com/tomtom/tcomment_vim.git'
+Plugin 'git://github.com/vim-scripts/IndexedSearch.git'
+Plugin 'git://github.com/tpope/vim-fugitive.git'
+Plugin 'git://github.com/tpope/vim-git.git'
+Plugin 'git://github.com/mattn/emmet-vim.git'
+Plugin 'git://github.com/altercation/vim-colors-solarized.git'
+Plugin 'git://github.com/kien/ctrlp.vim.git'
+Plugin 'git://github.com/JazzCore/ctrlp-cmatcher.git'
+Plugin 'git://github.com/tpope/vim-surround.git'
+Plugin 'git://github.com/vim-scripts/matchit.zip'
+Plugin 'git://github.com/godlygeek/tabular.git'
+Plugin 'git://github.com/mileszs/ack.vim.git'
+Plugin 'git://github.com/vim-scripts/L9.git'
+Plugin 'git://github.com/kchmck/vim-coffee-script.git'
+Plugin 'git://github.com/tpope/vim-haml.git'
+Plugin 'git://github.com/nono/vim-handlebars.git'
+Plugin 'git://github.com/tpope/vim-markdown.git'
+Plugin 'git://github.com/briancollins/vim-jst.git'
+Plugin 'git://github.com/pangloss/vim-javascript.git'
+Plugin 'git://github.com/scottmcginness/vim-jquery.git'
+Plugin 'git://github.com/tpope/vim-ragtag.git'
+Plugin 'git://github.com/othree/html5.vim.git'
+Plugin 'git://github.com/vim-scripts/simplefold.git'
+Plugin 'git://github.com/scrooloose/syntastic.git'
+Plugin 'git://github.com/tpope/vim-endwise.git'
+Plugin 'git://github.com/reinh/vim-makegreen.git'
+Plugin 'git://github.com/danro/rename.vim.git'
+Plugin 'git://github.com/airblade/vim-rooter.git'
+Plugin 'git://github.com/skwp/vim-rspec.git'
+Plugin 'git://github.com/vim-scripts/taglist.vim.git'
+Plugin 'git://github.com/vim-scripts/BufOnly.vim.git'
+Plugin 'git://github.com/vim-scripts/bufexplorer.zip.git'
+Plugin 'git://github.com/maxbrunsfeld/vim-yankstack.git'
+Plugin 'git://github.com/jgdavey/vim-railscasts.git'
+Plugin 'git://github.com/ricardovaleriano/vim-github-theme.git'
+Plugin 'git://github.com/vim-scripts/summerfruit256.vim.git'
+Plugin 'git://github.com/bling/vim-airline.git'
+Plugin 'git://github.com/morhetz/gruvbox.git'
+Plugin 'git://github.com/tomasr/molokai.git'
+Plugin 'git://github.com/noahfrederick/vim-hemisu.git'
+Plugin 'git://github.com/skwp/greplace.vim.git'
+Plugin 'git://github.com/tpope/vim-unimpaired.git'
+Plugin 'git://github.com/dterei/VimCobaltColourScheme.git'
+Plugin 'git://github.com/Valloric/YouCompleteMe.git'
+Plugin 'git://github.com/SirVer/ultisnips.git'
+Plugin 'git://github.com/honza/vim-snippets.git'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " Tabs/spaces
 set tabstop=2
@@ -39,7 +94,6 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 
-
 if has("autocmd")
   " Set File type to 'text' for files ending in .txt
   autocmd BufNewFile,BufRead *.txt setfiletype text
@@ -66,7 +120,6 @@ if has("autocmd")
 else
   set autoindent		" always set autoindenting on
 endif " has("autocmd")
-
 
 
 map Q gq
@@ -206,3 +259,11 @@ au! BufRead,BufNewFile *.sass         setfiletype sass
 au! BufRead,BufNewFile *.jst          setfiletype html
 au! BufNewFile,BufRead *.prawn        setfiletype ruby
 
+" Ultisnips
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"

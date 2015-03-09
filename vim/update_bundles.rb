@@ -9,7 +9,6 @@ $git_bundles = %w{
   git://github.com/scrooloose/nerdtree.git
   git://github.com/vim-ruby/vim-ruby.git
   git://github.com/tpope/vim-rails.git
-  git://github.com/tsaleh/vim-supertab.git
   git://github.com/tomtom/tcomment_vim.git
   git://github.com/vim-scripts/IndexedSearch.git
   git://github.com/tpope/vim-fugitive.git
@@ -17,13 +16,12 @@ $git_bundles = %w{
   git://github.com/mattn/emmet-vim.git
   git://github.com/altercation/vim-colors-solarized.git
   git://github.com/kien/ctrlp.vim.git
+  git://github.com/JazzCore/ctrlp-cmatcher.git
   git://github.com/tpope/vim-surround.git
   git://github.com/tsaleh/vim-matchit.git
   git://github.com/godlygeek/tabular.git
   git://github.com/mileszs/ack.vim.git
-  git://github.com/vim-scripts/FuzzyFinder.git
   git://github.com/vim-scripts/L9.git
-  git://github.com/ap/vim-css-color.git
   git://github.com/kchmck/vim-coffee-script.git
   git://github.com/tpope/vim-haml.git
   git://github.com/nono/vim-handlebars.git
@@ -31,7 +29,6 @@ $git_bundles = %w{
   git://github.com/briancollins/vim-jst.git
   git://github.com/pangloss/vim-javascript.git
   git://github.com/scottmcginness/vim-jquery.git
-  git://github.com/briancollins/vim-jst.git
   git://github.com/tpope/vim-ragtag.git
   git://github.com/othree/html5.vim.git
   git://github.com/vim-scripts/simplefold.git
@@ -55,9 +52,16 @@ $git_bundles = %w{
   git://github.com/skwp/greplace.vim.git
   git://github.com/tpope/vim-unimpaired.git
   git://github.com/dterei/VimCobaltColourScheme.git
-  git://github.com/suxpert/vimcaps.git
+  git://github.com/Valloric/YouCompleteMe.git
 }
+
+# git://github.com/SirVer/ultisnips.git
+# git://github.com/honza/vim-snippets.git
+# git://github.com/tsaleh/vim-supertab.git
+# git://github.com/suxpert/vimcaps.git
 # git://github.com/sfsekaran/cobalt.vim.git
+# git://github.com/vim-scripts/FuzzyFinder.git
+# git://github.com/ap/vim-css-color.git
 
 # Where we put zip files from vim.org/scripts/
 TEMP_ZIP_NAME = 'temp.zip'
@@ -107,22 +111,14 @@ $vim_org_scripts = [
 git_bundles = %w{
 git://github.com/fholgado/minibufexpl.vim.git
 git://github.com/wincent/Command-T.git
-git://github.com/garbas/vim-snipmate.git
 git://github.com/rcyrus/snipmate-snippets-rubymotion.git
 git://github.com/Shougo/neocomplcache.git
 git://github.com/bingaman/vim-sparkup.git
 git://github.com/astashov/vim-ruby-debugger.git
 git://github.com/pangloss/vim-javascript.git
-git://github.com/scrooloose/nerdtree.git
 git://github.com/timcharper/textile.vim.git
-git://github.com/tomtom/tcomment_vim.git
 git://github.com/tpope/vim-cucumber.git
-git://github.com/tpope/vim-fugitive.git
-git://github.com/tpope/vim-git.git
-git://github.com/tpope/vim-haml.git
-git://github.com/tpope/vim-markdown.git
 git://github.com/tpope/vim-repeat.git
-git://github.com/tpope/vim-surround.git
 git://github.com/tpope/vim-vividchalk.git
 git://github.com/tsaleh/vim-matchit.git
 git://github.com/tsaleh/vim-shoulda.git

@@ -6,55 +6,65 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Plugins
-Plugin 'git://github.com/scrooloose/nerdtree.git'
-Plugin 'git://github.com/vim-ruby/vim-ruby.git'
-Plugin 'git://github.com/tpope/vim-rails.git'
-Plugin 'git://github.com/tomtom/tcomment_vim.git'
-Plugin 'git://github.com/vim-scripts/IndexedSearch.git'
-Plugin 'git://github.com/tpope/vim-fugitive.git'
-Plugin 'git://github.com/tpope/vim-git.git'
-Plugin 'git://github.com/mattn/emmet-vim.git'
-Plugin 'git://github.com/altercation/vim-colors-solarized.git'
-Plugin 'git://github.com/kien/ctrlp.vim.git'
-Plugin 'git://github.com/JazzCore/ctrlp-cmatcher.git'
-Plugin 'git://github.com/tpope/vim-surround.git'
-Plugin 'git://github.com/vim-scripts/matchit.zip'
-Plugin 'git://github.com/godlygeek/tabular.git'
-Plugin 'git://github.com/mileszs/ack.vim.git'
-Plugin 'git://github.com/vim-scripts/L9.git'
-Plugin 'git://github.com/kchmck/vim-coffee-script.git'
-Plugin 'git://github.com/tpope/vim-haml.git'
-Plugin 'git://github.com/nono/vim-handlebars.git'
-Plugin 'git://github.com/tpope/vim-markdown.git'
-Plugin 'git://github.com/briancollins/vim-jst.git'
-Plugin 'git://github.com/pangloss/vim-javascript.git'
-Plugin 'git://github.com/scottmcginness/vim-jquery.git'
-Plugin 'git://github.com/tpope/vim-ragtag.git'
-Plugin 'git://github.com/othree/html5.vim.git'
-Plugin 'git://github.com/vim-scripts/simplefold.git'
-Plugin 'git://github.com/scrooloose/syntastic.git'
-Plugin 'git://github.com/tpope/vim-endwise.git'
-Plugin 'git://github.com/reinh/vim-makegreen.git'
-Plugin 'git://github.com/danro/rename.vim.git'
-Plugin 'git://github.com/airblade/vim-rooter.git'
-Plugin 'git://github.com/skwp/vim-rspec.git'
-Plugin 'git://github.com/vim-scripts/taglist.vim.git'
-Plugin 'git://github.com/vim-scripts/BufOnly.vim.git'
-Plugin 'git://github.com/vim-scripts/bufexplorer.zip.git'
-Plugin 'git://github.com/maxbrunsfeld/vim-yankstack.git'
-Plugin 'git://github.com/jgdavey/vim-railscasts.git'
-Plugin 'git://github.com/ricardovaleriano/vim-github-theme.git'
-Plugin 'git://github.com/vim-scripts/summerfruit256.vim.git'
-Plugin 'git://github.com/bling/vim-airline.git'
-Plugin 'git://github.com/morhetz/gruvbox.git'
-Plugin 'git://github.com/tomasr/molokai.git'
-Plugin 'git://github.com/noahfrederick/vim-hemisu.git'
-Plugin 'git://github.com/skwp/greplace.vim.git'
-Plugin 'git://github.com/tpope/vim-unimpaired.git'
-Plugin 'git://github.com/dterei/VimCobaltColourScheme.git'
-Plugin 'git://github.com/Valloric/YouCompleteMe.git'
-Plugin 'git://github.com/SirVer/ultisnips.git'
-Plugin 'git://github.com/honza/vim-snippets.git'
+
+" Basic
+Plugin 'scrooloose/nerdtree'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'vim-scripts/IndexedSearch'
+Plugin 'mileszs/ack.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'JazzCore/ctrlp-cmatcher'
+Plugin 'maxbrunsfeld/vim-yankstack'
+Plugin 'danro/rename.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'vim-scripts/BufOnly.vim'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'vim-scripts/bufexplorer.zip'
+Plugin 'godlygeek/tabular'
+Plugin 'vim-scripts/L9'
+Plugin 'tpope/vim-ragtag'
+Plugin 'vim-scripts/simplefold'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-endwise'
+Plugin 'reinh/vim-makegreen'
+Plugin 'airblade/vim-rooter'
+Plugin 'bling/vim-airline'
+Plugin 'skwp/greplace.vim'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
+" Language Specific
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-haml'
+Plugin 'nono/vim-handlebars'
+Plugin 'tpope/vim-markdown'
+Plugin 'othree/html5.vim'
+Plugin 'briancollins/vim-jst'
+Plugin 'pangloss/vim-javascript'
+Plugin 'scottmcginness/vim-jquery'
+Plugin 'skwp/vim-rspec'
+
+" Themes
+Plugin 'morhetz/gruvbox'
+Plugin 'tomasr/molokai'
+Plugin 'dterei/VimCobaltColourScheme'
+Plugin 'stulzer/heroku-colorscheme'
+Plugin 'jgdavey/vim-railscasts'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'ricardovaleriano/vim-github-theme'
+Plugin 'vim-scripts/summerfruit256.vim'
+Plugin 'noahfrederick/vim-hemisu'
+Plugin 'gertjanreynaert/cobalt2-vim-theme'
+Plugin 'gosukiwi/vim-atom-dark'
+Plugin 'abra/vim-abra'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -160,7 +170,7 @@ nnoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-" Easy buffer navigation
+" Easy split screen buffer navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -171,12 +181,16 @@ map <leader>h <C-w>s
 " NERDTree trigger
 nnoremap <leader>n :NERDTreeToggle<CR>
 
-
 " Clean whitespace
 map <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Ack
 map <leader>a :Ack
+
+if executable('ag')
+  " let g:ackprg = 'ack --nogroup --nocolor --column'
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 " Yankring
 nnoremap <silent> <F3> :YRShow<cr>
@@ -220,14 +234,16 @@ colorscheme railscasts
 set t_Co=256
 
 if has('gui_running')
-  colorscheme cobalt
-"   colorscheme molokai
-"   colorscheme solarized
-  set background=dark
-"   set background=dark
-"   set transparency=5
-"   set guifont=Inconsolata:h13
-"   set guifont=Monaco:h11
+  " colorscheme cobalt
+  colorscheme atom-dark
+  " colorscheme railscasts
+  " colorscheme molokai
+  " set background=dark
+  " set transparency=5
+  " colorscheme solarized
+  " set guifont=Inconsolata:h14
+  " set guifont=Monaco:h12
+  " set guifont=Inconsolata-dz\ for\ Powerline:h12,5
   let g:airline_powerline_fonts = 1
   set guifont=Sauce\ Code\ Powerline:h12
 
@@ -267,3 +283,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" Disable tab for ycm completion
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
